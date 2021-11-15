@@ -121,21 +121,25 @@ nlu:
 
 
 - intent: seiten_hilfe
+  examples: |
     - Kannst du mir helfen?
     - ich brauche Hilfe
     - Hilfe!
 
 - intent: zufällig_hier
+  examples: |
     - Ich wollte mir nur mal die Seite hier anschauen.
     - Ich möchte nur mal gucken.
     - Ich bin zufällig auf die Seite gekommen
 
 - intent: lesebürgerinnen
+  examples: |
     - Ich suche die Lesebürger.
     - Was passiert bei den lesebüger*innen?
     - Was sind die lesebüger*innen?
 
 - intent: junge_burg
+  examples: |
     - Ich suche die Junge Burg
     - Was passiert in der Jungen Burg?
     - Was ist die Junge Burg?
@@ -146,6 +150,7 @@ nlu:
     - Gibt es auch was für Jugendliche?
 
 - intent: besucherin
+  examples: |
     - Ich bin Besucher*in
     - ich bin Besucher
     - ich bin nur zu Besuch
@@ -153,17 +158,20 @@ nlu:
     - Ich will nur mal gucken
 
 - intent: artist
+  examples: |
     - Ich bin Künstler*in
     - I am an artist
     - Ich bin Autorin
     - Ich schreibe Literatur
 
 - intent: studio
+  examples: |
     - Was ist das Studio?
     - Was passiert im Studio?
     - Was geschieht im Studio?
 
 - intent: trans_droste
+  examples: |
     - Was ist Trans | Droste
     - Was ist transdroste
     - Was ist trans droste
@@ -171,6 +179,7 @@ nlu:
     - trans droste hat das was mit trans sexuell zu tun?
 
 - intent: mediathek
+  examples: |
     - Was finde ich in der Mediathek
     - Wo ist die Mediathek
     - Was ist die Mediathek
@@ -178,17 +187,20 @@ nlu:
     - Mediathek, ist die cool?
 
 - intent: webresidency
+  examples: |
     - Was ist eine Web residency?
     - Was ist eine webresidency?
     - Was ist eine Web Residenz?
 
 
 - intent: bälle
+  examples: |
     - Was sind die Bälle?
     - Was sind diese Bälle?
     - Was können die Bälle?
 
 - intent: veranstaltungen
+  examples: |
     - Was passiert aktuell?
     - Was für Veranstaltungen gibt es in der Burg?
     - Ich möchte mich zu Veranstaltung XYZ informieren
@@ -197,6 +209,7 @@ nlu:
     - Welche Veranstaltungen gibt es nächste Woche?
 
 - intent: bedingung_veranstaltungen
+  examples: |
     - Wie kann ich teilnehmen?
     - Muss ich mich anmelden?
     - Kostet das was?
@@ -204,36 +217,44 @@ nlu:
     - Muss ich eine Karte kaufen?
 
 - intent: workadventure
+  examples: |
     - Wo finde ich das Workadventure?
     - was ist das Workadventure
     - was kann ich mit workadventure machen?
 
 - intent: mozilla_hubs
+  examples: |
     - Wo finde ich das Mozilla Hubs?
     - was ist das Mozilla Hubs
     - was kann ich mit Mozilla Hubs machen?
 
 - intent: virtuuelle_welt_1
+  examples: |
     - Wo finde ich diese virtuelle Welt?
     - Hier soll irgendwo so eine virtuelle Welt sein?
 
 - intent: virtuelle_welt_handlungsoptionen
+  examples: |
     - Was kann man in der virtuellen Welt machen?
 
 - intent: datenspeicher
+  examples: |
     - Speicherst du meine Antworten?
     - Merkst du dir meine Antworten?
 
 - intent: datenspeicher_wie_lange
+  examples: |
     - Wie lange speicherst du meine Antworten?
     - Wie lange merkst du dir meine Antworten?
 
 - intent: feedback
+  examples: |
     - Ich habe Feedback
     - Ich möchte mich beschweren
     - Ich habe etwas zu kritisieren
 
 - intent: barrierearmut
+  examples: |
     - Ist die Seite barrierefrei?
     - Warum ist die Seite nicht barrierefrei?
     - Ist die Seite barrierearm?
@@ -242,18 +263,21 @@ nlu:
     - Ich kann das meiste auf der Seite nicht lesen
 
 - intent: gebärdensprache
+  examples: |
     - Was ist mit Übersetzung in Gebärdensprache?
     - Gibt es Übersetzung in Gebärdensprache?
     - Habt Ihr auch ein Angebot für taubstumme Menschen?
     - Ich kann nicht hören.
 
 - intent: vorlesen_lassen
+  examples: |
     - So viel Text
     - Immer nur lesen
     - Ich kann nicht so viel lesen
     - Ich mag gerne Hörspiele
 
 - intent: design
+  examples: |
     - Diese Website ist anstrengend.
     - Wieso fallen die Buchstaben so auseinander?
     - Wieso ist die Seite so unübersichtlich?
@@ -263,12 +287,14 @@ nlu:
     - Kann ich das Design ausschalten?
 
 - intent: bot_identität
+  examples: |
     - Wer bist du?
     - Was bist du?
 
 
 
 - intent: bot_aufgabe
+  examples: |
     - Was machst du hier?
     - Was ist deine Aufgabe
     - Wofür bist du gut?
@@ -283,6 +309,7 @@ nlu:
 
 
 - intent: ki_frage
+  examples: |
     - Bist du eine KI
     - Bist du eine künstliche Intelligenz?
 
@@ -290,6 +317,7 @@ nlu:
 
 
 - intent: bot_beleidigung
+  examples: |
     - Du bist dumm.
     - Du kannst noch gar nichts.
     - Du kannst nichts
