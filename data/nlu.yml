@@ -118,3 +118,184 @@ nlu:
     - am I talking to a human?
     - bist du ein Mensch?
     - bist du ein Bot?
+
+
+- intent: seiten_hilfe
+    - Kannst du mir helfen?
+    - ich brauche Hilfe
+    - Hilfe!
+
+- intent: zufällig_hier
+    - Ich wollte mir nur mal die Seite hier anschauen.
+    - Ich möchte nur mal gucken.
+    - Ich bin zufällig auf die Seite gekommen
+
+- intent: lesebürgerinnen
+    - Ich suche die Lesebürger.
+    - Was passiert bei den lesebüger*innen?
+    - Was sind die lesebüger*innen?
+
+- intent: junge_burg
+    - Ich suche die Junge Burg
+    - Was passiert in der Jungen Burg?
+    - Was ist die Junge Burg?
+    - Meine Tochter macht hier mit, wo finde ich das?
+    - Mein Sohn macht hier mit, wo finde ich das?
+    - Wo ist das Jugendprogramm?
+    - Gibt es auch was für Kinder?
+    - Gibt es auch was für Jugendliche?
+
+- intent: besucherin
+    - Ich bin Besucher*in
+    - ich bin Besucher
+    - ich bin nur zu Besuch
+    - Ich war schon mal am Center for Literature
+    - Ich will nur mal gucken
+
+- intent: artist
+    - Ich bin Künstler*in
+    - I am an artist
+    - Ich bin Autorin
+    - Ich schreibe Literatur
+
+- intent: studio
+    - Was ist das Studio?
+    - Was passiert im Studio?
+    - Was geschieht im Studio?
+
+- intent: trans_droste
+    - Was ist Trans | Droste
+    - Was ist transdroste
+    - Was ist trans droste
+    - was ist trans-droste
+    - trans droste hat das was mit trans sexuell zu tun?
+
+- intent: mediathek
+    - Was finde ich in der Mediathek
+    - Wo ist die Mediathek
+    - Was ist die Mediathek
+    - was kann die Mediathek
+    - Mediathek, ist die cool?
+
+- intent: webresidency
+    - Was ist eine Web residency?
+    - Was ist eine webresidency?
+    - Was ist eine Web Residenz?
+
+
+- intent: bälle
+    - Was sind die Bälle?
+    - Was sind diese Bälle?
+    - Was können die Bälle?
+
+- intent: veranstaltungen
+    - Was passiert aktuell?
+    - Was für Veranstaltungen gibt es in der Burg?
+    - Ich möchte mich zu Veranstaltung XYZ informieren
+    - Welche Veranstaltungen gibt es heute?
+    - Welche Veranstaltungen gibt es morgen?
+    - Welche Veranstaltungen gibt es nächste Woche?
+
+- intent: bedingung_veranstaltungen
+    - Wie kann ich teilnehmen?
+    - Muss ich mich anmelden?
+    - Kostet das was?
+    - Wie teuer ist das?
+    - Muss ich eine Karte kaufen?
+
+- intent: workadventure
+    - Wo finde ich das Workadventure?
+    - was ist das Workadventure
+    - was kann ich mit workadventure machen?
+
+- intent: mozilla_hubs
+    - Wo finde ich das Mozilla Hubs?
+    - was ist das Mozilla Hubs
+    - was kann ich mit Mozilla Hubs machen?
+
+- intent: virtuuelle_welt_1
+    - Wo finde ich diese virtuelle Welt?
+    - Hier soll irgendwo so eine virtuelle Welt sein?
+
+- intent: virtuelle_welt_handlungsoptionen
+    - Was kann man in der virtuellen Welt machen?
+
+- intent: datenspeicher
+    - Speicherst du meine Antworten?
+    - Merkst du dir meine Antworten?
+
+- intent: datenspeicher_wie_lange
+    - Wie lange speicherst du meine Antworten?
+    - Wie lange merkst du dir meine Antworten?
+
+- intent: feedback
+    - Ich habe Feedback
+    - Ich möchte mich beschweren
+    - Ich habe etwas zu kritisieren
+
+- intent: barrierearmut
+    - Ist die Seite barrierefrei?
+    - Warum ist die Seite nicht barrierefrei?
+    - Ist die Seite barrierearm?
+    - Ist die Seite auch für Menschen mit Sehbehinderung geeignet?
+    - Was ist mit Barrierefreiheit?
+    - Ich kann das meiste auf der Seite nicht lesen
+
+- intent: gebärdensprache
+    - Was ist mit Übersetzung in Gebärdensprache?
+    - Gibt es Übersetzung in Gebärdensprache?
+    - Habt Ihr auch ein Angebot für taubstumme Menschen?
+    - Ich kann nicht hören.
+
+- intent: vorlesen_lassen
+    - So viel Text
+    - Immer nur lesen
+    - Ich kann nicht so viel lesen
+    - Ich mag gerne Hörspiele
+
+- intent: design
+    - Diese Website ist anstrengend.
+    - Wieso fallen die Buchstaben so auseinander?
+    - Wieso ist die Seite so unübersichtlich?
+    - Das Design der Seite gefällt mir nicht
+    - wieso ist das design der seite so?
+    - ich kann das nicht lesen
+    - Kann ich das Design ausschalten?
+
+- intent: bot_identität
+    - Wer bist du?
+    - Was bist du?
+
+
+
+- intent: bot_aufgabe
+    - Was machst du hier?
+    - Was ist deine Aufgabe
+    - Wofür bist du gut?
+    - Was sollst du hier machen?
+    - Was sollst du mir erzählen
+    - Was erzählst du mir?
+    - Wofür bist du trainiert?
+    - Wofür bist du gebaut?
+    - Was kannst du?
+    - Was sollst du bier?
+
+
+
+- intent: ki_frage
+    - Bist du eine KI
+    - Bist du eine künstliche Intelligenz?
+
+
+
+
+- intent: bot_beleidigung
+    - Du bist dumm.
+    - Du kannst noch gar nichts.
+    - Du kannst nichts
+    - Mir hilfst du nicht
+    - Du bist nicht hilfreich.
+    - Scheißbot
+    - Blöder Bot
+    - Du bringst mir nichts.
+    - Du bist ein langweiliger Bot.

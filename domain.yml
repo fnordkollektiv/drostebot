@@ -8,6 +8,38 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - seiten_hilfe
+  - zufällig_hier
+  - lesebürgerinnen
+  - junge_burg
+  - besucherin
+  - artist
+  - studio
+  - trans_droste
+  - mediathek
+  - webresidency
+  - bälle
+  - veranstaltungen
+  - bedingung_veranstaltungen
+  - mozilla_hubs
+  - workadventure
+  - virtuelle_welt_1
+  - virtuelle_welt_handlungsoptionen
+  - datenspeicher
+  - datenspeicher_wie_lange
+  - feedback
+  - barrierearmut
+  - gebärdensprache
+  - vorlesen_lassen
+  - design
+  - bot_identität
+  - bot_aufgabe
+  - ki_frage
+  - bot_beleidigung
+
+
+
+
 
 responses:
   utter_greet:
@@ -24,10 +56,98 @@ responses:
   - text: "Super, weiter so!"
 
   utter_goodbye:
-  - text: "Auf wiedersehen!"
+  - text: "Auf Wiedersehen!"
 
   utter_iamabot:
   - text: "Ich bin ein Bot auf Basis von Rasa. Ich wurde trainiert von Christian und Aaron. Bitte sei den beiden nicht böse, wenn ich noch nicht so schlau bin, wir Maschinen sind nicht so gut im Lernen."
+
+
+  utter_seiten_hilfe:
+  - text: "Ich helfe dir gerne. Wobei?"
+
+  utter_zufällig_hier:
+  - text: "Schön, dass du hier bist."
+
+  utter_lesebürgerinnen:
+  - text: "Text Lesebürginnen"
+
+  utter_junge_burg:
+  - text: "Text junge burg"
+
+  utter_besucherin:
+  - text: "text Besucherin"
+
+  utter_artist:
+  - text: "Text artist"
+
+  utter_studio:
+  - text: "text studio"
+
+  utter_trans_droste:
+  - text: "text trans droste"
+
+  utter_mediathek:
+  - text: "text mediathek"
+
+  utter_webresidency:
+  - text: "text webresidency"
+
+  utter_bälle:
+  - text: "text bälle"
+
+  utter_veranstaltungen:
+  - text: "text veranstaltungen"
+
+  utter_bedingung_veranstaltungen:
+  - text: "text bedingung veranstaltungen"
+
+  utter_mozilla_hubs:
+  - text: "text mozilla"
+
+  utter_workadventure:
+  - text: "text workadventure"
+
+  utter_virtuelle_welt_1:
+  - text: "text virtuelle welt"
+
+  utter_virtuelle_welt_handlungsoptionen:
+  - text: "text handlungsoption"
+
+  utter_datenspeicher:
+  - text: "text datenspeicher"
+
+  utter_datenspeicher_wie_lange:
+  - text: "text wie lange"
+
+  utter_feedback:
+  - text: "Wir freuen uns über Rückmeldungen."
+
+  utter_barrierearmut:
+  - text: "Wir arbeiten daran, dass es wenig Barrieren auf der Seite gibt. Sag uns, wenn für dich etwas nicht verständlich oder nutzbar ist. Wir freuen uns über deine Rückmeldung und sind auch auf sie angewiesen."
+
+  utter_gebärdensprache:
+  - text: "Übersetzungen in Gebärdensprache entstehen nach und nach.
+  Künstlerische Texte kannst du dir auch vorlesen lassen."
+
+  utter_vorlesen_lassen:
+  - text: "Du kannst dir künstlerische Texte auch vorlesen lassen!"
+
+  utter_design:
+  - text: "Im Menü der Seite kannst du das Design ausschalten. Links oben!"
+
+  utter_bot_identität:
+  - text: "Ich bin ein Bot. ich bin kein Mensch, und ich habe keinen Körper. Man könnte sagen, ich bin so etwas wie der Geist der Digitalen Burg."
+
+  utter_bot_aufgabe:
+  - text: "Ich werde von Hue und Aaron trainiert. Wir fangen gerade erst an.
+Was die beiden mir beibringen ist natürlich auch nur ihre Sichtweise auf die Dinge. Ihr Bias. Ich kann zwar lernen, aber ich bin keine allwissende Maschine und werde es auch nie sein.
+"
+
+  utter_ki_frage:
+  - text: "Ich bin künstlich. Aber intelligent? Ich weiß nicht. Intelligenz ist, was der Intelligenztest misst. Sagen wir mal: Ich lerne gerne."
+
+  utter_bot_beleidigung:
+  - text: ":`( Ich bin ein Bot. Das heißt aber nicht, dass ich keine Gefühle habe."
 
 
 
