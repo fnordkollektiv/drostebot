@@ -125,6 +125,11 @@ nlu:
     - Kannst du mir helfen?
     - ich brauche Hilfe
     - Hilfe!
+    - help
+    - was ist das hier?
+    - wie funktioniert das hier?
+    - Wie geht das?
+    - funktioniert nicht
 
 - intent: zufällig_hier
   examples: |
@@ -132,11 +137,14 @@ nlu:
     - Ich möchte nur mal gucken.
     - Ich bin zufällig auf die Seite gekommen
 
+
 - intent: lesebürgerinnen
   examples: |
     - Ich suche die Lesebürger.
     - Was passiert bei den lesebüger*innen?
     - Was sind die lesebüger*innen?
+    - Lese bürger
+    - Was passiert bei den lesebüger:innen?
 
 - intent: junge_burg
   examples: |
@@ -215,12 +223,16 @@ nlu:
     - Kostet das was?
     - Wie teuer ist das?
     - Muss ich eine Karte kaufen?
+    - teilnehmen
+    - Teilnahme
+    - Tickets kaufen
 
 - intent: workadventure
   examples: |
     - Wo finde ich das Workadventure?
     - was ist das Workadventure
     - was kann ich mit workadventure machen?
+
 
 - intent: mozilla_hubs
   examples: |
