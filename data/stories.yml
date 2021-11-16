@@ -28,3 +28,12 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+
+- story: help path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: seiten_hilfe
+    - action: utter_seiten_hilfe
+    # Variable speichern und versuchen dazu irgendwas zu finden?
