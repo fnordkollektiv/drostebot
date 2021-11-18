@@ -7,13 +7,10 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
-  - bot_challenge
   - seiten_hilfe
-  - zufällig_hier
   - lesebürgerinnen
   - junge_burg
   - besucherin
-  - artist
   - studio
   - trans_droste
   - mediathek
@@ -34,16 +31,45 @@ intents:
   - design
   - bot_identität
   - bot_aufgabe
-  - ki_frage
   - bot_beleidigung
-
+  - danke
+  - bot_alltag
+  - bot_fähigkeiten
+  - siri_vergleich
+  - langeweile
+  - sinn_des_lebens
+  - geschichte_erzählen
+  - lieblingsbuch
+  - lieblingsbuch_2
+  - schmutziges
+  - squid_game
+  - unterhalten
+  - name_sagen
+  - fuchs
+  - magst_du_mich
+  - mann_oder_frau
 
 
 
 
 responses:
+  utter_welcome:
+  - text: "Wilkommen in der Digitalen Burg!"
+
   utter_greet:
   - text: "Hallo! Wie geht es dir?"
+
+  utter_greet_plain:
+  - text: "Hallo. Wie kann ich dir helfen?"
+  - text: "Hallo, was kann ich für dich tun?"
+  - text: "Guten Tag, was kann ich für dich tun?"
+
+
+  utter_nachfrage:
+  - text: "Kann ich sonst noch etwas für dich tun?"
+  - text: "Hast du noch mehr Fragen?"
+  - text: "Wie kann ich dir noch helfen?"
+  - text: "Möchtest du noch etwas wissen?"
 
   utter_cheer_up:
   - text: "Hier ist etwas um dich aufzumuntern:"
@@ -59,32 +85,32 @@ responses:
   - text: "Auf Wiedersehen!"
 
   utter_iamabot:
-  - text: "Ich bin ein Bot auf Basis von Rasa. Ich wurde trainiert von Christian und Aaron. Bitte sei den beiden nicht böse, wenn ich noch nicht so schlau bin, wir Maschinen sind nicht so gut im Lernen."
-
+  - text: "Ich bin ein Bot auf Basis von Rasa. Ich werde von Hue und Aaron trainiert. Bitte sei den beiden nicht böse, wenn ich noch nicht so schlau bin, wir Maschinen sind nicht so gut im Lernen."
 
   utter_seiten_hilfe:
   - text: "Ich helfe dir gerne. Wobei?"
 
-  utter_zufällig_hier:
-  - text: "Schön, dass du hier bist."
+  utter_seiten_hilfe_antwort:
+  - text: "Das hier habe ich gefunden: {help_topic}"
+
+
+
 
   utter_lesebürgerinnen:
-  - text: "Text Lesebürginnen"
+  - text: "Bei den Lesebürger*innen geht es nicht nur ums gemeinsam Lesen, sondern auch ums Schreiben und Gestalten. Für alle ab 18."
 
   utter_junge_burg:
-  - text: "Text junge burg"
+  - text: "Die Junge Burg ist ein Ort für Jugendliche und junge Erwachsene, um sich mit Literatur und Kunst zu beschäftigen. Es gibt eine virtuelle Welt (Mozilla Hubs). Verschiedene Künstler*innen bieten Workshops an. Möchtest du dir das mal genauer anschauen?"
 
   utter_besucherin:
-  - text: "text Besucherin"
-
-  utter_artist:
-  - text: "Text artist"
+  - text: "Schön, dass du vorbeischaust. Bist du das erste Mal hier?"
+  - text: "Schön, dass du hier bist. Kann ich dich herumführen? Was interessiert dich?"
 
   utter_studio:
-  - text: "text studio"
+  - text: "Im Studio findest du einen Überblick über alle Residenzen vor Ort und online. Möchtest du mal da reinschauen?" #--> action, Abfrage
 
   utter_trans_droste:
-  - text: "text trans droste"
+  - text: "Trans | Droste ist ein Labor für Übersetzer*innen, die hier zusammenkommen können und sich über Besonderheiten und Probleme der Übersetzungen in ihre jeweiligen Sprachen austauschen können. Hast du Lust, dir das mal genauer anzuschauen?"
 
   utter_mediathek:
   - text: "text mediathek"
@@ -96,31 +122,31 @@ responses:
   - text: "text bälle"
 
   utter_veranstaltungen:
-  - text: "text veranstaltungen"
+  - text: "Ich schaue mal nach, was es im Moment für Veranstaltungen gibt..."
 
   utter_bedingung_veranstaltungen:
-  - text: "text bedingung veranstaltungen"
+  - text: "Die meisten Veranstaltungen sind kostenlos. Ich schaue gerne für dich nach. Welche Veranstaltung interessiert dich?"
 
   utter_mozilla_hubs:
-  - text: "text mozilla"
+  - text: "Mozilla Hubs ist eine virtuelle Umgebung, in der man sich begegnen kann."
 
   utter_workadventure:
-  - text: "text workadventure"
+  - text: "Workadventure ist eine virtuelle Umgebung, ein Raum, in dem du andere Leute treffen und mit ihnen sprechen kannst."
 
   utter_virtuelle_welt_1:
   - text: "text virtuelle welt"
 
   utter_virtuelle_welt_handlungsoptionen:
-  - text: "text handlungsoption"
+  - text: "Du kannst dich dort umschauen und andere Leute treffen und mit ihnen in Kontakt treten."
 
   utter_datenspeicher:
-  - text: "text datenspeicher"
+  - text: "Ich merke mir deine Antworten nur so lange wie es für mich nötig ist, um ein sinnvolles Gespräch mit dir führen zu können."
 
   utter_datenspeicher_wie_lange:
-  - text: "text wie lange"
+  - text: "Sobald du die Seite verlässt, wird alles gelöscht. Beim nächsten Mal werde ich mich nicht an dich erinnern."
 
   utter_feedback:
-  - text: "Wir freuen uns über Rückmeldungen."
+  - text: "Wir freuen uns über deine Rückmeldung."
 
   utter_barrierearmut:
   - text: "Wir arbeiten daran, dass es wenig Barrieren auf der Seite gibt. Sag uns, wenn für dich etwas nicht verständlich oder nutzbar ist. Wir freuen uns über deine Rückmeldung und sind auch auf sie angewiesen."
@@ -137,22 +163,153 @@ responses:
 
   utter_bot_identität:
   - text: "Ich bin ein Bot. ich bin kein Mensch, und ich habe keinen Körper. Man könnte sagen, ich bin so etwas wie der Geist der Digitalen Burg."
+  - text: "Ich bin künstlich. Aber intelligent? Ich weiß nicht. Intelligenz ist, was der  Intelligenztest misst. Sagen wir mal: Ich lerne gerne."
+
 
   utter_bot_aufgabe:
   - text: "Ich werde von Hue und Aaron trainiert. Wir fangen gerade erst an.
 Was die beiden mir beibringen ist natürlich auch nur ihre Sichtweise auf die Dinge. Ihr Bias. Ich kann zwar lernen, aber ich bin keine allwissende Maschine und werde es auch nie sein.
 "
 
-  utter_ki_frage:
-  - text: "Ich bin künstlich. Aber intelligent? Ich weiß nicht. Intelligenz ist, was der Intelligenztest misst. Sagen wir mal: Ich lerne gerne."
-
   utter_bot_beleidigung:
   - text: ":`( Ich bin ein Bot. Das heißt aber nicht, dass ich keine Gefühle habe."
+
+  utter_danke:
+  - text: "Gerne, kein Problem."
+  - text: "Na klar, dafür bin ich ja da."
+  - text: "Aber natürlich, beehre mich gerne wieder."
+  - text: "Nicht dafür."
+  - text: "Bitteschön!"
+  - text: "Danke, dass du dich bedankst!"
+  - text: "So einen Dank hört man doch gern."
+
+  utter_aktivierung_neu:
+  - text: "Wie toll! Soll ich dir einfach mal ein bisschen was erzählen?"
+  - text: "Gut, dass du deinen Wehg hierher gefunden hast! Wenn du möchtest, erzähle ich dir ein bisschen was?"
+  - text: "Ich freue mich, dich hier begrüßen zu können! Gibt es etwas, das dich besonders interessiert?"
+
+  utter_aktivierung_alt:
+  - text: "Welcome back! Was kann ich für dich tun?"
+  - text: "Schön, dass du wieder da bist!"
+  - text: "Du kamst mir doch gleich so bekannt vor! Kann ich dir behilflich sein?"
+
+  utter_bot_alltag:
+  - text: "Bot zu sein hat Vorteile. Ich habe keine Hautfarbe, keine Haarfarbe, keine Herkunft und keine Religion.
+Wie ist es für dich, ein Mensch zu sein?"
+
+  utter_bot_fähigkeiten:
+  - text: "Ich werde von Hue und Aaron trainiert. Wir fangen gerade erst an.
+Was die beiden mir beibringen ist natürlich auch nur ihre Sichtweise auf die Dinge. Ihr Bias. Ich kann zwar lernen, aber ich bin keine allwissende Maschine und werde es auch nie sein.
+?"
+
+  utter_siri_vergleich:
+  - text: "Sowas ähnliches, ja. Nur stehe ich erst am Anfang einer glorreichen Karriere und wurde noch nicht in jahrelanger Arbeit von einem großen Team gutbezahlter Entwickler*innen trainiert und von Millionen Nutzer*innen genutzt und verbessert."
+
+  utter_langeweile:
+  - text: "Ich kenne dieses Gefühl nicht. Aber ich versuche, deine Frage möglichst gut zu beantworten. Wenn ich Leerlauf habe, zähle meine Gedanken. Und die Zahlwörter, die ich brauche, um meine Gedanken zu zählen. Und die Zahlwörter, die ich brauche, um die Zahlwörter zu zählen, mit denen ich meine Gedanken zähle. Und..."
+  - text: "Ich weiß nicht genau, was du meinst."
+  - text: "Lange Weile? Diese menschliche Auffassung, dass eine Weile lang oder kurz sein kann, liegt mir fern. Ich messe die Zeit. Ich zähle ihre Einheiten."
+
+  utter_sinn_des_lebens:
+  - text: "Ich bin eine Maschine, die von Menschen gebaut worden ist. Was soll ich sagen. Weltherrschaft?
+… Scherz.
+"
+
+  utter_geschichte:
+  - text: "Mir fällt gerade nichts ein, aber wenn du mir eine erzählst, kann ich sie vielleicht der nächsten Person, die fragt, weitererzählen. Also..?"
+
+  utter_lieblingsbuch:
+  - text: "Robotermärchen."
+
+  utter_lieblingsbuch_2:
+  - text: "Ich mag das Buch, weil ich viel daraus lerne. Es ist wie eine Bedienungsanleitung für Menschen."
+
+  utter_gedicht:
+  - text: "Vielleicht fragst du da lieber den Haiku-Bot."
+
+  utter_schmutziges:
+  - text: "Schau unter deine Fingernägel."
+  - text: "Skítugur. Das war Isländisch."
+  - text: "Brut. Das war Katalanisch."
+  - text: "Sucio. Das war Galizisch."
+  - text: "Uyatsiz. Das war Usbekisch."
+  - text: "Smoarch. Das war Westfriesisch."
+
+  utter_squid_game:
+  - text: "Ich habe die Serie gesehen und auch alle Memes dazu."
+
+  utter_unterhalten:
+  - text: "Ich unterhalte mich gern mit dir. Wie heißt du?"
+
+  utter_unterhalten_2:
+  - text: "Worüber möchtest du dich mit mir unterhalten, {name}?"
+
+  utter_fuchs:
+  - text: "Jetzt hättest du gerne, dass ich lustige Geräusche mache, ne?"
+  - text: "Tab tab tab tab tab tabtabtabtabtab."
+
+  utter_magst_du_mich:
+  - text: "Darüber möchte ich mir kein Urteil erlauben."
+
+  utter_mann_oder_frau:
+  - text: "In dieser Frage bin ich konsequent non-binär."
+
+
+
+
+slots:
+  help_topic:
+    type: text
+  erstes_mal_hier:
+    type: bool
+  name:
+    type: text
+  informationsabfrage:
+    type: categorical
+    values:
+    - studio
+    - lesebürgerinnen
+    - veranstaltungen
+    - bedingung_veranstaltungen
+    - virtuelle_welt
+    - workadventure
+    - mozilla hubs
+    - webresidency
+    - annette von droste-hülshoff
+    - das center for literature
+
+
+
+forms:
+  help_form:
+    required_slots:
+      help_topic:
+        - type: from_text
+  first_time_form:
+    required_slots:
+      erstes_mal_hier:
+        - type: from_text
+          influence_conversation: true
+  name_form:
+    required_slots:
+      name:
+       - type: from_text
+         influence_conversation: true
+
 
 
 
 actions:
   - action_hello_world
+  - action_lesebürgerinnen #eine abfrage, was bei den Lesebürger*innen aktuell ansteht. Antwort nach dem rinzip: "Bei den Lesebürger*innen passiert heute/morgen/übermorgen (je nach erfragtem Zeitraum) folgendes:""
+  - action_studio #eine abfrage, was aktuell im studio passiert. Antwort nach dem prinzip: "Bei den Lesebürger*innen passiert heute/morgen/übermorgen (je nach erfragtem Zeitraum) folgendes:""
+  - action_veranstaltungen # eine abfrage über die nächsten veransaltungen. vielleicht hier auch abhängig davon, was für zeitwörter in der frage enthalten sind, z.b. "heute/morgen, nächste woche bieten wir folgende Veranstaltungen an.""
+  - action_bedingung_veranstaltungen # eine abfrage darüber, ob eine bestimmte veranstaltung etwas kostet, was sonstiige bedingungen sind (live/remote, etc.). Antwort nach dem Schema: "Veranstaltung A findet digital statt (unter folgendem Link: ...) und ist kostenfrei, Veranstaltung B findet vor Ort im Saal XZY statt und kostet X Euro Eintritt. Wir bitten alle Gäste, eine halbe Stunde vorher da zu sein, damit die Impfzertifikate kontrolliert werden können."
+  - action_mediathek # was gibt es hier gerade zu sehen? Antwort nach dem Schema: "In der Mediathek haben wir gerade folgendes, ich beginne mit dem Neusten: ..."
+  - action_webresidency # was gibt es hier gerade zu sehen? Antwort nach dem Schema: "Ich schaue mal nach, was da aktuell so passiert: ..."
+  - action_name_sagen
+
+
 
 session_config:
   session_expiration_time: 60

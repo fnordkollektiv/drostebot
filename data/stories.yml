@@ -1,7 +1,6 @@
 version: "2.0"
 
 stories:
-
 - story: happy path
   steps:
   - intent: greet
@@ -35,5 +34,239 @@ stories:
     - intent: greet
     - action: utter_greet
     - intent: seiten_hilfe
-    - action: utter_seiten_hilfe
+    - action: help_form
+    - action: utter_seiten_hilfe_antwort
     # Variable speichern und versuchen dazu irgendwas zu finden?
+    #
+    #
+    #
+
+- story: identität_bot
+  steps:
+  - intent: bot_identität
+  - action: utter_bot_identität
+  - intent: bot_beleidigung
+  - action: utter_bot_beleidigung
+  - action: utter_seiten_hilfe
+
+- story: virtuelle_welten
+  steps:
+  - intent: virtuelle_welt_1
+  - action: utter_virtuelle_welt_1
+  - intent: virtuelle_welt_handlungsoptionen
+  - action: utter_virtuelle_welt_handlungsoptionen
+
+
+- story: besucherin_first
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: besucherin
+  - action: utter_besucherin
+  - slot_was_set:
+      - erstes_mal_hier: true
+  - action: utter_aktivierung_neu
+
+- story: besucherin
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: besucherin
+  - action: utter_besucherin
+  - slot_was_set:
+      - erstes_mal_hier: false
+  - action: utter_aktivierung_alt
+
+- story: unterhalten
+  steps:
+  - intent: unterhalten
+  - action: utter_unterhalten
+  - action: name_form
+  - action: utter_unterhalten_2
+
+
+- story: unterhalten_2
+  steps:
+  - intent: unterhalten
+  - action: utter_unterhalten
+  - action: name_form
+  - action: utter_unterhalten_2
+  - intent: fuchs
+  - action: utter_fuchs
+
+- story: lieblingsbuch
+  steps:
+  - intent: lieblingsbuch
+  - action: utter_lieblingsbuch
+  - intent: lieblingsbuch_2
+  - action: utter_lieblingsbuch_2
+
+- story: beratung_lesebürgerinnen
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: lesebürgerinnen
+  - action: utter_lesebürgerinnen
+  - intent: danke
+  - action: utter_danke
+
+- story: beratung_junge_burg
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: junge_burg
+  - action: utter_junge_burg
+  - intent: danke
+  - action: utter_danke
+
+- story: beratung_studio
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: studio
+  - action: utter_studio
+  - intent: danke
+  - action: utter_danke
+
+- story: beratung_veranstaltungen
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: veranstaltungen
+  - action: utter_veranstaltungen
+  - intent: danke
+  - action: utter_danke
+
+- story: smalltalk
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_alltag
+  - action: utter_bot_alltag
+  - intent: bot_fähigkeiten
+  - action: utter_bot_fähigkeiten
+  - intent: mann_oder_frau
+  - action: utter_mann_oder_frau
+  - intent: siri_vergleich
+  - action: utter_siri_vergleich
+  - intent: bot_beleidigung
+  - action: utter_bot_beleidigung
+  - intent: schmutziges
+  - action: utter_schmutziges
+  - intent: langeweile
+  - action: utter_langeweile
+  - intent: sinn_des_lebens
+  - action: utter_sinn_des_lebens
+
+
+- story: lesebürgerinnen
+  steps:
+  - intent: greet
+  - action: utter_greet_plain
+  - intent: lesebürgerinnen
+  - slot_was_set:
+    - informationsabfrage: lesebürgerinnen
+  - action: utter_lesebürgerinnen
+  - action: action_veranstaltungen
+  - action: utter_nachfrage
+  - intent: veranstaltungen
+  - slot_was_set:
+    - informationsabfrage: veranstaltungen
+  - action: utter_veranstaltungen
+
+
+
+
+
+
+- story: mediathek
+  steps:
+    - intent: mediathek
+    - action: utter_mediathek
+
+
+- story: webresidency
+  steps:
+  - intent: webresidency
+  - action: utter_webresidency
+
+
+- story: bälle
+  steps:
+  - intent: bälle
+  - action: utter_bälle
+
+
+
+
+- story: mozilla hubs
+  steps:
+  - intent: mozilla_hubs
+  - action: utter_mozilla_hubs
+
+
+
+
+- story: datenschutz 1
+  steps:
+  - intent: datenspeicher
+  - action: utter_datenspeicher
+
+- story: datenschutz 2
+  steps:
+  - intent: datenspeicher_wie_lange
+  - action: utter_datenspeicher_wie_lange
+
+
+- story: feedback
+  steps:
+  - intent: feedback
+  - action: utter_feedback
+
+
+- story: barriere
+  steps:
+  - intent: barrierearmut
+  - action: utter_barrierearmut
+
+
+- story: gebärdensprache
+  steps:
+  - intent: gebärdensprache
+  - action: utter_gebärdensprache
+
+- story: vorlesen
+  steps:
+  - intent: vorlesen_lassen
+  - action: utter_vorlesen_lassen
+
+
+
+- story: design
+  steps:
+  - intent: design
+  - action: utter_design
+
+
+- story: aufgabe
+  steps:
+  - intent: bot_aufgabe
+  - action: utter_design
+
+- story: geschichte erzählen
+  steps:
+  - intent: geschichte_erzählen
+  - action: utter_geschichte # Durch API ersetzen?
+
+
+- story: squid game
+  steps:
+  - intent: squid_game
+  - action: utter_squid_game
+
+
+
+- story: sympathie
+  steps:
+  - intent: magst_du_mich
+  - action: utter_magst_du_mich

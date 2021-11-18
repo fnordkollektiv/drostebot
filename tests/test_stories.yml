@@ -84,9 +84,361 @@ stories:
     intent: goodbye
   - action: utter_goodbye
 
-- story: bot challenge
+- story: bot identität
   steps:
   - user: |
       are you a bot?
-    intent: bot_challenge
+    intent: bot_identität
   - action: utter_iamabot
+
+- story: help 1
+  steps:
+  - user: |
+      hilfe
+    intent: seiten_hilfe
+  - action: utter_seiten_hilfe
+
+
+- story: identität_bot 1
+  steps:
+  - user: |
+      bist du ein mensch?
+    intent: bot_identität
+  - action: utter_bot_identität
+  - user: |
+      bist du intelligent?
+    intent: bot_identität
+  - action: utter_bot_identität
+  - user: |
+      du bist also dumm
+    intent: bot_beleidigung
+  - action: utter_bot_beleidigung
+  - action: utter_seiten_hilfe
+
+
+
+
+
+- story: virtuelle welten 1
+  steps:
+  - user: |
+      wo ist die virtuelle Welt?
+    intent: virtuelle_welt_1
+  - action: utter_virtuelle_welt_1
+  - user: |
+      was kann ich in der virtuellen welt machen?
+    intent: virtuelle_welt_handlungsoptionen
+  - action: utter_virtuelle_welt_handlungsoptionen
+
+
+
+- story: besucherin_first
+  steps:
+  - user: |
+      hallo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      ich bin nur zu besuch
+    intent: besucherin
+  - action: utter_besucherin
+  - slot_was_set:
+      - erstes_mal_hier: true
+  - action: utter_aktivierung_neu
+
+- story: besucherin
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      nur zu besuch
+    intent: besucherin
+  - action: utter_besucherin
+  - slot_was_set:
+      - erstes_mal_hier: false
+  - action: utter_aktivierung_alt
+
+- story: unterhalten
+  steps:
+  - user: |
+      können wir uns unterhalten?
+    intent: unterhalten
+  - action: utter_unterhalten
+  - action: name_form
+  - action: utter_unterhalten_2
+
+
+- story: unterhalten_2
+  steps:
+  - user: |
+      chatten?
+    intent: unterhalten
+  - action: utter_unterhalten
+  - action: name_form
+  - action: utter_unterhalten_2
+  - user: |
+      wie macht der fuchs?
+    intent: fuchs
+  - action: utter_fuchs
+
+- story: lieblingsbuch
+  steps:
+  - user: |
+      was ist dein lieblingsbuch
+    intent: lieblingsbuch
+  - action: utter_lieblingsbuch
+  - user: |
+      wieso das?
+    intent: lieblingsbuch_2
+  - action: utter_lieblingsbuch_2
+
+
+
+- story: beratung_lesebürgerinnen
+  steps:
+  - user: |
+      hallo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      was sind die lesebürger?
+    intent: lesebürgerinnen
+  - action: utter_lesebürgerinnen
+  - user: |
+      dankeschön
+    intent: danke
+  - action: utter_danke
+
+
+
+
+- story: beratung_junge_burg
+  steps:
+  - user: |
+      hey
+    intent: greet
+  - action: utter_greet
+  - user: |
+      gibts programm für jugendliche
+    intent: junge_burg
+  - action: utter_junge_burg
+  - user: |
+      danke
+    intent: danke
+  - action: utter_danke
+
+- story: beratung_studio
+  steps:
+  - user: |
+      hallo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      was ist im studio
+    intent: studio
+  - action: utter_studio
+  - user: |
+      danke
+    intent: danke
+  - action: utter_danke
+
+- story: beratung_veranstaltungen
+  steps:
+  - user: |
+      hallo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      was passiert aktuell
+    intent: veranstaltungen
+  - action: utter_veranstaltungen #API
+  - user: |
+      danke
+    intent: danke
+  - action: utter_danke
+
+- story: smalltalk
+  steps:
+  - user: |
+      guten tag
+    intent: greet
+  - action: utter_greet
+  - user: |
+      wie sieht dein alltag so aus?
+    intent: bot_alltag
+  - action: utter_bot_alltag
+  - user: |
+      was kannst du so?
+    intent: bot_fähigkeiten
+  - action: utter_bot_fähigkeiten
+  - user: |
+      bist du ein mann oder eine frau?
+    intent: mann_oder_frau
+  - action: utter_mann_oder_frau
+  - user: |
+      bist du sowas wie siri?
+    intent: siri_vergleich
+  - action: utter_siri_vergleich
+  - user: |
+      du bist ein trottel
+    intent: bot_beleidigung
+  - action: utter_bot_beleidigung
+  - user: |
+      sag mal was sexuelles
+    intent: schmutziges
+  - action: utter_schmutziges
+  - user: |
+      langweilst du dich nie?
+    intent: langeweile
+  - action: utter_langeweile
+  - user: |
+      was ist der sinn des lebens?
+    intent: sinn_des_lebens
+  - action: utter_sinn_des_lebens
+
+
+- story: lesebürger
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet_plain
+  - user: |
+      erzähl mal über lesebürgerinnen
+    intent: lesebürgerinnen
+  - slot_was_set:
+    - informationsabfrage: lesebürgerinnen
+  - action: utter_lesebürgerinnen
+  - action: action_veranstaltungen # API
+  - action: utter_nachfrage
+  - user: |
+      was gibt es für veranstaltungen?
+    intent: veranstaltungen
+  - slot_was_set:
+    - informationsabfrage: veranstaltungen
+  - action: utter_veranstaltungen # API
+
+
+- story: mediathek
+  steps:
+    - user: |
+        was ist die mediathek?
+      intent: mediathek
+    - action: utter_mediathek
+
+
+- story: webresidency
+  steps:
+  - user: |
+      was ist webresidency?
+    intent: webresidency
+  - action: utter_webresidency
+
+
+- story: bälle
+  steps:
+  - user: |
+      was siend diese bälle
+    intent: bälle
+  - action: utter_bälle
+
+
+
+
+- story: mozilla hubs
+  steps:
+  - user: |
+      was ist mozilla hubs
+    intent: mozilla_hubs
+  - action: utter_mozilla_hubs
+
+
+
+
+- story: datenschutz 1
+  steps:
+  - user: |
+         daten gespeichert?
+    intent: datenspeicher
+  - action: utter_datenspeicher
+
+- story: datenschutz 2
+  steps:
+  - user: |
+      wie lange daten gespeichert?
+    intent: datenspeicher_wie_lange
+  - action: utter_datenspeicher_wie_lange
+
+
+- story: feedback
+  steps:
+  - user: |
+      ich will mich beschweren
+    intent: feedback
+  - action: utter_feedback
+
+
+- story: barriere
+  steps:
+  - user: |
+      ist das auch für leute die nicht gut sehen geeignet?
+    intent: barrierearmut
+  - action: utter_barrierearmut
+
+
+- story: gebärdensprache
+  steps:
+  - user: |
+        ich kann nicht hören
+    intent: gebärdensprache
+  - action: utter_gebärdensprache
+
+- story: vorlesen
+  steps:
+  - user: |
+      vorlesen
+    intent: vorlesen_lassen
+  - action: utter_vorlesen_lassen
+
+
+
+- story: design
+  steps:
+  - user: |
+      was bedeutet das design
+    intent: design
+  - action: utter_design
+
+
+- story: aufgabe
+  steps:
+  - user: |
+      was ist deine aufgabe?
+    intent: bot_aufgabe
+  - action: utter_design
+
+- story: geschichte erzählen
+  steps:
+  - user: |
+      erzähle mir eine Geschichte
+    intent: geschichte_erzählen
+  - action: utter_geschichte # Durch API ersetzen?
+
+
+- story: squid game
+  steps:
+  - user: |
+      was hältst du von squid game
+    intent: squid_game
+  - action: utter_squid_game
+
+
+
+- story: sympathie
+  steps:
+  - user: |
+      magst du mich?
+    intent: magst_du_mich
+  - action: utter_magst_du_mich

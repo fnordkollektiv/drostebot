@@ -26,20 +26,14 @@ nlu:
 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
     - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
     - have a nice day
-    - see you around
-    - bye bye
     - see you later
     - tschüss
     - ciao
-    - wir sehen uns
+
 
 - intent: affirm
   examples: |
@@ -58,51 +52,30 @@ nlu:
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
     - no way
-    - not really
+    - nein
+    - ne
+    - nö
+    - nope
 
 - intent: mood_great
   examples: |
     - perfect
     - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
     - so good
-    - so perfect
     - ich fühle mich gut
     - großartig
     - toll
-    - wunderbar
     - gut
-    - fantastisch
     - super
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
     - I am sad
-    - I don't feel very well
-    - I am disappointed
     - super sad
-    - I'm so sad
     - sad
     - very sad
     - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
     - so sad
     - schlecht
     - traurig
@@ -110,7 +83,7 @@ nlu:
     - ich hatte einen schlimmen tag
     - scheiße
 
-- intent: bot_challenge
+- intent: bot_identität
   examples: |
     - are you a bot?
     - are you a human?
@@ -118,33 +91,39 @@ nlu:
     - am I talking to a human?
     - bist du ein Mensch?
     - bist du ein Bot?
-
+    - bist du echt?
+    - spreche ich mit einem Menschen?
+    - wer bist du?
+    - Wer bist du?
+    - Was bist du?
+    - Bist du eine KI
+    - Bist du eine künstliche Intelligenz?
+    - bist du intelligent?
+    - intelligent?
+    - AI
 
 - intent: seiten_hilfe
   examples: |
     - Kannst du mir helfen?
     - ich brauche Hilfe
     - Hilfe!
-    - help
     - was ist das hier?
-    - wie funktioniert das hier?
-    - Wie geht das?
-    - funktioniert nicht
-
-- intent: zufällig_hier
-  examples: |
-    - Ich wollte mir nur mal die Seite hier anschauen.
-    - Ich möchte nur mal gucken.
-    - Ich bin zufällig auf die Seite gekommen
-
+    - was kann ich hier machen
+    - wie geht das hier?
+    - hilfe
+    - help
 
 - intent: lesebürgerinnen
   examples: |
     - Ich suche die Lesebürger.
     - Was passiert bei den lesebüger*innen?
     - Was sind die lesebüger*innen?
-    - Lese bürger
-    - Was passiert bei den lesebüger:innen?
+    - ich habe von den Lesebürgern gehört.
+    - ich bin hier wegen der Lesebürger.
+    - Ich möchte mich über die Lesebürger*innen informieren
+    - Lesebüger
+    - Lesebürger*innen
+    - Lesebürgerinnen
 
 - intent: junge_burg
   examples: |
@@ -164,19 +143,21 @@ nlu:
     - ich bin nur zu Besuch
     - Ich war schon mal am Center for Literature
     - Ich will nur mal gucken
-
-- intent: artist
-  examples: |
-    - Ich bin Künstler*in
-    - I am an artist
-    - Ich bin Autorin
-    - Ich schreibe Literatur
+    - Ich wollte mir nur mal die Seite hier anschauen.
+    - Ich möchte nur mal gucken.
+    - Ich bin zufällig auf die Seite gekommen
+    - Ich bin das erste Mal hier.
+    - Ich möchte mich nur mal umschauen.
+    - Mal schauen, was es hier so gibt.
+    - Was geht hier so?
 
 - intent: studio
   examples: |
     - Was ist das Studio?
     - Was passiert im Studio?
     - Was geschieht im Studio?
+    - studio?
+
 
 - intent: trans_droste
   examples: |
@@ -199,13 +180,14 @@ nlu:
     - Was ist eine Web residency?
     - Was ist eine webresidency?
     - Was ist eine Web Residenz?
-
+    - webresidency
 
 - intent: bälle
   examples: |
     - Was sind die Bälle?
     - Was sind diese Bälle?
     - Was können die Bälle?
+    - bälle
 
 - intent: veranstaltungen
   examples: |
@@ -215,6 +197,7 @@ nlu:
     - Welche Veranstaltungen gibt es heute?
     - Welche Veranstaltungen gibt es morgen?
     - Welche Veranstaltungen gibt es nächste Woche?
+    - wann passiert was?
 
 - intent: bedingung_veranstaltungen
   examples: |
@@ -223,47 +206,58 @@ nlu:
     - Kostet das was?
     - Wie teuer ist das?
     - Muss ich eine Karte kaufen?
-    - teilnehmen
-    - Teilnahme
-    - Tickets kaufen
 
 - intent: workadventure
   examples: |
     - Wo finde ich das Workadventure?
     - was ist das Workadventure
     - was kann ich mit workadventure machen?
-
+    - workadventure
 
 - intent: mozilla_hubs
   examples: |
     - Wo finde ich das Mozilla Hubs?
     - was ist das Mozilla Hubs
     - was kann ich mit Mozilla Hubs machen?
+    - mozilla hubs
 
-- intent: virtuuelle_welt_1
+- intent: virtuelle_welt_1
   examples: |
     - Wo finde ich diese virtuelle Welt?
     - Hier soll irgendwo so eine virtuelle Welt sein?
+    - virtuelle welt
 
 - intent: virtuelle_welt_handlungsoptionen
   examples: |
     - Was kann man in der virtuellen Welt machen?
+    - Wofür ist die virtuelle Welt da?
+    - Was sind diese virtuellen Welten?
+    - was ist virtuelle welt
 
 - intent: datenspeicher
   examples: |
     - Speicherst du meine Antworten?
     - Merkst du dir meine Antworten?
+    - datenschutz
+    - was passiert mit meinen daten?
 
 - intent: datenspeicher_wie_lange
   examples: |
     - Wie lange speicherst du meine Antworten?
     - Wie lange merkst du dir meine Antworten?
+    - Wie lange speicherst du was ich sage?
+    - Wie lange speicherst du meine Antworten?
+
 
 - intent: feedback
   examples: |
     - Ich habe Feedback
     - Ich möchte mich beschweren
     - Ich habe etwas zu kritisieren
+    - feedback
+    - beschwerde
+    - funktioniert nicht
+    - du bist ein guter bot
 
 - intent: barrierearmut
   examples: |
@@ -273,6 +267,7 @@ nlu:
     - Ist die Seite auch für Menschen mit Sehbehinderung geeignet?
     - Was ist mit Barrierefreiheit?
     - Ich kann das meiste auf der Seite nicht lesen
+    - ich kann nicht gut sehen
 
 - intent: gebärdensprache
   examples: |
@@ -280,6 +275,7 @@ nlu:
     - Gibt es Übersetzung in Gebärdensprache?
     - Habt Ihr auch ein Angebot für taubstumme Menschen?
     - Ich kann nicht hören.
+    - Gebärdensprache
 
 - intent: vorlesen_lassen
   examples: |
@@ -297,11 +293,10 @@ nlu:
     - wieso ist das design der seite so?
     - ich kann das nicht lesen
     - Kann ich das Design ausschalten?
+    - design
+    - unübersichtlich
+    - anstrengend
 
-- intent: bot_identität
-  examples: |
-    - Wer bist du?
-    - Was bist du?
 
 
 
@@ -320,13 +315,6 @@ nlu:
 
 
 
-- intent: ki_frage
-  examples: |
-    - Bist du eine KI
-    - Bist du eine künstliche Intelligenz?
-
-
-
 
 - intent: bot_beleidigung
   examples: |
@@ -338,4 +326,153 @@ nlu:
     - Scheißbot
     - Blöder Bot
     - Du bringst mir nichts.
+    - du trottel
     - Du bist ein langweiliger Bot.
+
+- intent: danke
+  examples: |
+    - danke
+    - vielen dank
+    - thx
+    - thank you
+    - thanks
+    - ich danke dir
+    - das war hilfreich, danke
+    - merci
+    - herzlichen dank
+    - besten dank
+    - ich bedanke mich
+
+- intent: bot_alltag
+  examples: |
+    - wie ist es, ein bot zu sein?
+    - wie lebt es sich so als bot?
+    - wie ist das leben als bot?
+    - wie sieht dein alltag aus?
+    - was tust du so?
+
+- intent: bot_fähigkeiten
+  examples: |
+    - was kannst du?
+    - welche fähigkeiten hast du?
+    - weißt du alles?
+    - kannst du alles?
+    - kannst du alle informationen finden?
+    - bist du schlauer als ein mensch?
+
+- intent: siri_vergleich
+  examples: |
+    - Bist du sowas ähnliches wie Siri
+    - Bist du sowas ähnliches wie Alexa
+    - Bist du sowas ähnliches wie Google
+    - Bist du ein Sprachassistent, nur als Chat
+    - siri
+
+- intent: langeweile
+  examples: |
+    - Was machst du, wenn du dich langweilst?
+    - Langweilst du dich manchmal?
+    - Langweilst du dich nie?
+    - Wie gehst du mit Langeweile um?
+    - was ist dein Rezept gegen Langweile?
+
+- intent: sinn_des_lebens
+  examples: |
+    - Was ist der Sinn des Lebens?
+    - Weißt du was der Sinn des Lebens ist?
+    - purpose of life?
+    - Hat das alles einen Sinn?
+    - Macht das alles Sinn?
+    - Das Leben macht keinen Sinn, oder?
+
+- intent: geschichte_erzählen
+  examples: |
+   - kannst du mir eine geschichte erzählen?
+   - erzählst du mir eine geschichte?
+   - ich würde gerne eine geschichte hören.
+   - kannst du mir was erzählen?
+
+
+- intent: lieblingsbuch
+  examples: |
+    - was ist dein lieblingsbuch?
+    - your favorite book
+    - lieblingsbuch?
+    - welches buch liest du am liebsten?
+    - welches buch magst du am liebsten?
+    - welches buch liest du am häufigsten?
+    - welches buch liebst du?
+    - was liest du gerne?
+
+
+- intent: lieblingsbuch_2
+  examples: |
+    - wieso?
+    - warum?
+    - ausgerechnet?
+    - wieso das?
+    - wieso kein anderes?
+    - hä?
+    - aha..?
+    - okay...?
+    - bisschen klischeemäßig, oder?
+    - why
+
+- intent: schmutziges
+  examples: |
+    - sag was schmutziges
+    - sag mir was schmutziges
+    - kannst du was schmutziges sagen
+    - sexuell
+
+- intent: squid_game
+  examples: |
+    - hast du squid game gesehen
+    - guckst du squid game
+    - wie findest du squid game
+    - magst du squid game
+
+
+- intent: unterhalten
+  examples: |
+    - hast du lust dich zu unterhalten=?
+    - chatten?
+    - lust zu chatten?
+    - bock zu chatten?
+    - sprichst du mit mir?
+
+- intent: name_sagen
+  examples: |
+    - ich heiße {}
+    - ich bin {}
+    - mein name ist {}
+    - {}
+
+- intent: fuchs
+  examples: |
+    - wie macht der fuchs?
+    - what does the fox say?
+    - Wie macht de Fuchs?
+    - fuchs
+    - Was macht der Fuchs?
+    - Was sagt der Fuchs?
+
+
+- intent: magst_du_mich
+  examples: |
+    - magst du mich?
+    - findest du mich nett?
+    - wie findest du mich?
+    - bin ich cool
+    - liebst du mich
+
+- intent: mann_oder_frau
+  examples: |
+    - bist du ein mann?
+    - bist du eine frau?
+    - bist du weiblich?
+    - bist du männlich?
+    - bist du ein mann oder eine frau?
+    - bist du weiblich oder männlich?
+    - welches geschlecht hast du?
+    - hast du ein geschlecht?
